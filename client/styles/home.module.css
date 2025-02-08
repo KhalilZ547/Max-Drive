@@ -1,10 +1,9 @@
-/* styles/home.module.css */
-
 /* Navigation Underline Animation */
 .navLink {
   position: relative;
   padding-bottom: 4px;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .navLink::after {
@@ -19,11 +18,7 @@
   transform-origin: left center;
 }
 
-.navLink:hover::after {
-  width: 100%;
-  transform: scaleY(1.2);
-}
-
+.navLink:hover::after,
 .navLink:focus-visible::after {
   width: 100%;
   transform: scaleY(1.2);
@@ -33,6 +28,9 @@
 .serviceCard {
   position: relative;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .serviceCard:hover {
@@ -53,4 +51,6 @@
   backdrop-filter: blur(2px);
 }
 
-/* Rest of your CSS module styles... */
+.serviceCard:hover .serviceGradient {
+  opacity: 0.5;
+}
