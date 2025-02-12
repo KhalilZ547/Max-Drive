@@ -1,0 +1,21 @@
+.inputField {
+  border: 1px solid #1f3a68;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  transition: border-color 0.3s;
+}
+
+.inputField:focus {
+  border-color: #ff8f1f;
+}
+
+.inputLabel {
+  transition: all 0.3s;
+}
+
+.inputLabel.active {
+  top: -0.5rem;
+  left: 0.5rem;
+  font-size: 0.75rem;
+  color: #ff8f1f;
+}

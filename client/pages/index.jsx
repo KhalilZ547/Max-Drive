@@ -18,7 +18,8 @@ export default function Home() {
   return (
     <div className={`min-h-screen ${oswald.variable} font-sans`}
          style={{
-           backgroundImage: "url('/garage-bg.jpg')",
+           backgroundImage: "url('/imgs/cover.jpg')",
+
            backgroundSize: 'cover',
            backgroundAttachment: 'fixed',
            backgroundPosition: 'center'

@@ -1,19 +1,26 @@
-/* Navigation Underline Animation */
+.heading {
+  text-align: center;
+}
+
 .navLink {
   position: relative;
-  padding-bottom: 4px;
-  transition: color 0.3s ease;
+  padding-bottom: 8px; 
+  transition: color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
+}
+
+.navLink:hover {
+  transform: scale(1.05); 
 }
 
 .navLink::after {
   content: '';
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 3px; 
   bottom: 0;
   left: 0;
-  background: linear-gradient(90deg, var(--accent-red) 0%, var(--accent-orange) 100%);
+  background: linear-gradient(90deg, #ff4d4d 0%, #ff8f1f 100%);
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
   transform-origin: left center;
 }
@@ -22,20 +29,22 @@
 .navLink:focus-visible::after {
   width: 100%;
   transform: scaleY(1.2);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow effect on hover */
 }
 
-/* Service Card Enhancements */
+/* Service Card  */
 .serviceCard {
   position: relative;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
-  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adjusted transition timing */
+  border-radius: 12px; /* Slightly increased border radius */
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
 }
 
 .serviceCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(255, 77, 77, 0.1);
+  transform: translateY(-8px); /* Increased hover effect */
+  box-shadow: 0 15px 30px rgba(255, 77, 77, 0.2); /* Enhanced shadow on hover */
 }
 
 .serviceGradient {
