@@ -30,7 +30,7 @@
   width: 100%;
   transform: scaleY(1.2);
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), transform 0.4s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow effect on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /*  shadow effect on hover */
 }
 
 /* Service Card  */
@@ -39,12 +39,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adjusted transition timing */
   border-radius: 12px; /* Slightly increased border radius */
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* shadow for depth */
 }
 
 .serviceCard:hover {
   transform: translateY(-8px); /* Increased hover effect */
-  box-shadow: 0 15px 30px rgba(255, 77, 77, 0.2); /* Enhanced shadow on hover */
+  box-shadow: 0 15px 30px rgba(255, 77, 77, 0.2); /* shadow on hover */
 }
 
 .serviceGradient {

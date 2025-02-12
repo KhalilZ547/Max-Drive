@@ -47,7 +47,7 @@ export default function Gallery() {
         <div className="container mx-auto px-4 text-center">
           <h1 className={`${bebasNeue.className} text-4xl md:text-5xl text-[#ff8f1f]`}>Gallery</h1>
           <p className="text-gray-400 mt-4">Explore our collection of automotive projects and services.</p>
-          {/* Gallery content can be added here */}
+          {/* Gallery content will be added here */}
         </div>
       </section>
     </div>

@@ -35,7 +35,7 @@ const Contact = () => {
     }
     setError('');
     setSuccess(true);
-    // Here you would typically send the form data to your server
+    // Here the data to the server
   };
 
   return (

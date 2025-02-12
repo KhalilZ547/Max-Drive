@@ -1,4 +1,4 @@
-import '../styles/Clock.css'; // Import global CSS
+import '../styles/Clock.css'; 
 import React, { StrictMode, useState, useEffect } from 'react';
 
 function ErrorBoundary({ children }) {
@@ -7,7 +7,7 @@ function ErrorBoundary({ children }) {
 
   useEffect(() => {
     if (hasError) {
-      console.error(errorMessage); // Log the error message
+      console.error(errorMessage); 
     }
   }, [hasError, errorMessage]);
 
